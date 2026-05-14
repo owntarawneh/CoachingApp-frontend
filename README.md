@@ -1,66 +1,16 @@
-# OwnCoaching Frontend (React)
+# React + Vite
 
-This is the **frontend** of **OwnCoaching**, a fitness coaching web application built with **React + Vite**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Description
+Currently, two official plugins are available:
 
-OwnCoaching is a role-based fitness coaching platform with **two user types**:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **Clients**
-- **Coach (Admin)**
+## React Compiler
 
-The frontend communicates with a Node.js + PostgreSQL backend and renders different dashboards depending on the logged-in user role.
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## User Roles & Behavior
+## Expanding the ESLint configuration
 
-### Client
-- Log in / Sign up with email and password
-- View personal dashboard
-- View training plan
-- View nutrition plan
-- Submit weekly check-ins
-- Track progress history
-- Edit personal profile
-
-### coach
-- Log in with predefined admin account
-- View coach dashboard
-- View all clients
-- Review client check-ins
-- Add coach notes
-- Edit client training and nutrition plans
-
-## Authentication Flow
-
-- Users log in using email + password
-- Role is determined by the backend
-- Session is stored in `localStorage`
-- Routes are protected using role-based guards
-
-## Technologies
-
-- React 18
-- Vite
-- React Router
-- Fetch API
-- LocalStorage
-
-## Environment Variables
-
-Create a `.env` file based on `.env.sample`:
-
-```
-VITE_API_BASE=http://localhost:5000/api
-VITE_EXERCISEDB_HOST=exercisedb.p.rapidapi.com
-VITE_RAPIDAPI_KEY=YOUR_RAPIDAPI_KEY
-```
-
-## Getting Started
-
-```
-cd owncoaching-frontend
-npm install
-npm run dev
-```
-
-App runs on: http://localhost:5173
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
