@@ -1,0 +1,91 @@
+.nutritionPage {}
+
+.nutritionGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.nutritionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nutritionRight {
+  position: sticky;
+  top: 18px;
+}
+
+.nutritionTopCard {
+  padding: 14px;
+}
+
+.nutritionControlsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.nutritionControlLabel {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.nutritionControl select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.nutritionControl select:focus {
+  border-color: rgba(46, 196, 182, 0.5);
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.18);
+}
+
+.nutritionInfoStrip {
+  margin-top: 10px;
+}
+
+.nutritionMealsCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.nutritionMealsHeader {
+  padding: 12px 14px;
+  font-weight: 900;
+  border-bottom: 1px solid var(--border);
+}
+
+.nutritionMealsBody {
+  padding: 12px 14px 14px 14px;
+}
+
+.nutritionEmpty {
+  padding: 12px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+  background: #fff;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .nutritionGrid {
+    grid-template-columns: 1fr;
+  }
+  .nutritionRight {
+    position: static;
+  }
+  .nutritionControlsRow {
+    grid-template-columns: 1fr;
+  }
+}

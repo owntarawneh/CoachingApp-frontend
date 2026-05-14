@@ -1,0 +1,26 @@
+.unitToggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.unitToggleBtn {
+  border: 0;
+  background: transparent;
+  padding: 10px 14px;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--text);
+  min-width: 52px;
+}
+
+.unitToggleBtn.isActive {
+  background: var(--primary);
+  color: #fff;
+}
+
+.unitToggleBtn:not(.isActive):hover {
+  background: rgba(0, 0, 0, 0.04);
+}

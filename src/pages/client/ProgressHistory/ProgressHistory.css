@@ -1,0 +1,67 @@
+/* Make the whole page section wider (only this page) */
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Better balance: stronger left column, table dominates */
+.progressLayout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Make left side feel like a single column system */
+.progressLeft {
+  display: grid;
+  gap: 14px;
+  position: sticky;
+  top: 14px;
+}
+
+/* Give the right side presence */
+.progressRight {
+  min-width: 0;
+}
+
+/* Summary tiles should look like “stats”, not plain boxes */
+.summaryRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.summaryItem {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: var(--surface);
+}
+
+.summaryLabel {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.summaryValue {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+@media (max-width: 980px) {
+  .progressLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .progressLeft {
+    position: static;
+  }
+
+  .summaryRow {
+    grid-template-columns: 1fr;
+  }
+}

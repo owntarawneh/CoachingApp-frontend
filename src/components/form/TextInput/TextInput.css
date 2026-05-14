@@ -1,0 +1,26 @@
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.formInput {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+
+.formInput:focus {
+  border-color: rgba(46, 196, 182, 0.55);
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.18);
+}

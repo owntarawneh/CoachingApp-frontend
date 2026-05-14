@@ -1,0 +1,127 @@
+/* ✅ Center the whole page content so top row == table width */
+.checkInsPage {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Top row */
+.checkInsInboxTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 12px 0 14px 0;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Stat cards
+========================= */
+.checkInsStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 12px;
+
+  /* ✅ IMPORTANT: remove the old 560px cap */
+  width: auto;
+  flex: 1;
+  min-width: 520px;
+}
+
+.checkInsStat {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px 14px 12px 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: 160ms ease;
+}
+
+/* top accent */
+.checkInsStat::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--primary);
+  opacity: 0.85;
+}
+
+.checkInsStat:hover {
+  transform: translateY(-1px);
+}
+
+.checkInsStatLabel {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.checkInsStatValue {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* =========================
+   Filter block
+========================= */
+.checkInsFilter {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  min-width: 220px;
+}
+
+.checkInsFilterLabel {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.checkInsSelect {
+  width: 100%;
+  height: 42px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  font-weight: 700;
+}
+
+.checkInsSelect:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.18);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 880px) {
+  .checkInsStats {
+    grid-template-columns: 1fr;
+    min-width: 0;
+    width: 100%;
+    flex: unset;
+  }
+
+  .checkInsFilter {
+    width: 100%;
+  }
+}

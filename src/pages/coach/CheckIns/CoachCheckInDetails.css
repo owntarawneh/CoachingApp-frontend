@@ -1,0 +1,94 @@
+/* ✅ This is the main fix:
+   The SAME container wraps PageHeader + the grid */
+.checkInDetailsPage {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Layout */
+.checkInDetailsGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 12px;
+}
+
+/* Card spacing */
+.detailsCard {
+  padding: 14px;
+}
+
+.detailsTitle {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+/* Row */
+.detailsRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.detailsLabel {
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.detailsValue {
+  font-weight: 800;
+}
+
+/* ✅ Body measurements inside a clean grid (instead of inline styles) */
+.measurementsGrid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* ✅ Photos grid */
+.photosGridDetails {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Notes */
+.detailsNotes {
+  margin-top: 14px;
+}
+
+.detailsNotesBox {
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 12px;
+  color: var(--text);
+}
+
+/* Back link */
+.backRow {
+  margin-top: 10px;
+}
+
+.backLink {
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .checkInDetailsPage {
+    max-width: 100%;
+  }
+
+  .checkInDetailsGrid {
+    grid-template-columns: 1fr
+  };
+  }

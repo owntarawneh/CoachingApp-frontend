@@ -1,0 +1,86 @@
+.emeRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.emeCol {
+  flex: 1 1 280px;
+}
+
+.emeActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.emeMeals {
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.emeMealCard {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--card, #fff);
+}
+
+.emeMealTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emeMealGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 820px) {
+  .emeMealGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.emeItemsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emeTableWrap {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.emeTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.emeTable th,
+.emeTable td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.emeCellInput {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+}

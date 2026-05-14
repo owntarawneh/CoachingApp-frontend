@@ -1,0 +1,42 @@
+.actionCard {
+  display: block;
+  position: relative;
+  padding: 16px;
+  border-radius: 14px;
+  transition: 160ms ease;
+  cursor: pointer;
+}
+
+.actionCard:hover {
+  background: #F1FFFD;
+}
+
+.actionTitle {
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.actionCard:hover .actionTitle {
+  color: var(--primaryDark);
+}
+
+.actionDesc {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 90%;
+}
+
+.actionArrow {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--primaryDark);
+  transition: transform 160ms ease;
+}
+
+.actionCard:hover .actionArrow {
+  transform: translateX(4px);
+}

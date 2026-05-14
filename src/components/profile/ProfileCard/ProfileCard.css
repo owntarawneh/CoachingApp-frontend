@@ -1,0 +1,20 @@
+.profileCard {
+  background: #ffffff;
+  border: 1px solid #e6e8ee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.profileCardHeader {
+  margin-bottom: 12px;
+}
+
+.profileCardTitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profileCardBody {
+  display: grid;
+  gap: 12px;
+}

@@ -1,0 +1,41 @@
+.historyTableHeader {
+  padding: 12px 14px;
+  font-weight: 900;
+  border-bottom: 1px solid var(--border);
+}
+
+.historyTableWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.historyTable th,
+.historyTable td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.historyTable thead th {
+  background: var(--surface);
+  font-weight: 900;
+}
+
+.emptyCell {
+  padding: 18px 14px;
+  color: var(--muted);
+  white-space: normal;
+}
+
+.notesCell {
+  max-width: 420px;
+  white-space: normal;
+}

@@ -1,0 +1,18 @@
+.meal-card {
+  margin-bottom: 20px;
+}
+
+.meal-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.meal-card th,
+.meal-card td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.macro-summary {
+  margin-top: 20px;
+}

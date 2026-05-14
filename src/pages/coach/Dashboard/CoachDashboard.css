@@ -1,0 +1,11 @@
+/* CoachDashboard.css */
+/* Keep this file minimal. Table styling belongs to CheckInsTable.css */
+
+.coachDashboardWrap {
+  display: block;
+}
+
+/* Optional: if you want a little tighter dashboard spacing */
+.section {
+  margin-top: var(--s-4);
+}

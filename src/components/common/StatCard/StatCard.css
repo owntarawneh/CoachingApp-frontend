@@ -1,0 +1,26 @@
+.statCard {
+  padding: 16px;
+  min-height: 92px;
+}
+
+.statLabel {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.statValue {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.statSubtext {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}

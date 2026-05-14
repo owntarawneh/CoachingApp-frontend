@@ -1,0 +1,168 @@
+.coachSidebar {
+  width: 260px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+}
+
+/* Brand */
+.coachBrand {
+  padding: 10px 10px 14px 10px;
+}
+
+.coachBrandTitle {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.coachBrandSub {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* Nav */
+.coachNav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 6px 0 6px;
+}
+
+.coachNavLink {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0 12px;
+
+  border-radius: 12px;
+  color: var(--muted);
+  border: 1px solid transparent;
+
+  font-weight: 800;
+  transition: 160ms ease;
+}
+
+.coachNavLink:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Active — use teal theme */
+.coachNavLink.isActive {
+  background: rgba(46, 196, 182, 0.12);
+  border-color: rgba(46, 196, 182, 0.35);
+  color: var(--text);
+}
+
+/* Dot indicator like client */
+.coachNavLink.isActive::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--primaryDark);
+  margin-right: 10px;
+}
+
+/* Push footer down */
+.coachSidebarSpacer {
+  flex: 1;
+}
+
+/* Footer */
+.coachSidebarFooter {
+  padding: 10px;
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coachLogoutBtn {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 900;
+
+  cursor: pointer;
+  transition: 160ms ease;
+}
+
+.coachLogoutBtn:hover {
+  background: var(--bg);
+  border-color: rgba(46, 196, 182, 0.35);
+}
+
+.coachCopyright {
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* Mobile: sidebar becomes top bar */
+@media (max-width: 900px) {
+  .coachSidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .coachBrand {
+    padding: 0;
+  }
+
+  .coachNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .coachNavLink {
+    height: 38px;
+    padding: 0 10px;
+  }
+
+  .coachSidebarSpacer {
+    display: none;
+  }
+
+  .coachSidebarFooter {
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .coachLogoutBtn {
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .coachCopyright {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.btnBase {
+  padding: 10px 14px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.btnPrimary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btnPrimary:hover {
+  filter: brightness(0.95);
+}
+
+.btnSecondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btnSecondary:hover {
+  background: #f7f9fc;
+}
+
+.btnBase:focus {
+  box-shadow: 0 0 0 3px rgba(58, 91, 255, 0.12);
+}

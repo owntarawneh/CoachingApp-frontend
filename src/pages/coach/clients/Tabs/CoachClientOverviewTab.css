@@ -1,0 +1,108 @@
+.overviewWrap {
+  display: grid;
+  gap: 14px;
+}
+
+.overviewCard {
+  padding: 16px;
+}
+
+.overviewTitle {
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.overviewItem {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: var(--surface);
+}
+
+.overviewLabel {
+  font-size: 12px;
+  color: var(--text-muted, #666);
+  margin-bottom: 6px;
+}
+
+.overviewValue {
+  font-weight: 900;
+}
+
+.overviewRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.miniStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.miniStat {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: var(--surface);
+}
+
+.miniLabel {
+  font-size: 12px;
+  color: var(--text-muted, #666);
+  margin-bottom: 4px;
+}
+
+.miniValue {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.overviewActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quickLinks {
+  display: grid;
+  gap: 10px;
+}
+
+.quickLink {
+  display: inline-block;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.quickLink:hover {
+  text-decoration: underline;
+}
+
+.overviewHint {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text-muted, #666);
+}
+
+@media (max-width: 1000px) {
+  .overviewGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .overviewRow {
+    grid-template-columns: 1fr;
+  }
+
+  .miniStats {
+    grid-template-columns: 1fr;
+  }
+}

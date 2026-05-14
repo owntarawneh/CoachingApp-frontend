@@ -1,0 +1,30 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s-3) var(--s-4);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbarTitle {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.topbarSub {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.topbarAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: rgba(58, 91, 255, 0.12);
+  border: 1px solid rgba(58, 91, 255, 0.25);
+}

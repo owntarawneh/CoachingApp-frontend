@@ -1,0 +1,70 @@
+/* =========================
+   Pro UI Enhancements (Health-tech)
+========================= */
+
+/* Better page width + rhythm */
+.page {
+  max-width: 1100px;
+  padding: 28px;
+}
+
+/* Stronger card presence */
+.card {
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+/* Section titles look like real sections */
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+/* Make links look intentional */
+a {
+  color: var(--primaryDark);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Subtle hover elevation for clickable cards */
+.cardHover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  transition: 160ms ease;
+}
+
+/* Stat cards: add a top accent line */
+.statAccent {
+  position: relative;
+  overflow: hidden;
+}
+.statAccent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--primary);
+}
+
+/* Quick action cards: more like tiles */
+.actionCard {
+  border-radius: 14px;
+  transition: 160ms ease;
+}
+.actionCard:hover {
+  background: #F1FFFD; /* very light teal tint */
+}
+
+/* Make arrows more visible */
+.actionArrow {
+  font-weight: 900;
+  color: var(--primaryDark);
+}
+

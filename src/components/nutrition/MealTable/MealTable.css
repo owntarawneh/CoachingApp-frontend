@@ -1,0 +1,30 @@
+.mealTableWrap {
+  overflow-x: auto;
+}
+
+.mealTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.mealTable th,
+.mealTable td {
+  border: 1px solid #dfe6f0;
+  padding: 8px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.mealTable th {
+  background: #f6f8fb;
+  font-weight: 800;
+}
+
+.mealItemName {
+  font-weight: 700;
+}
+
+.mealTotalsRow td {
+  font-weight: 900;
+}

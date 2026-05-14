@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+  --muted: #64748B;
+  --text: #0F172A;
+
+  --primary: #2EC4B6;
+  --primaryDark: #22A89C;
+
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 14px;
+
+  /* Spacing */
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 20px;
+  --s-5: 24px;
+
+  /* Shadow */
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}

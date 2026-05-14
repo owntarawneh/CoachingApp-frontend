@@ -1,0 +1,146 @@
+/* Sidebar container */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand block */
+.sidebarBrand {
+  padding: 10px 10px 14px 10px;
+}
+
+.sidebarLogo {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.sidebarSub {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* Nav */
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 6px 0 6px;
+}
+
+/* Nav items */
+.navItem {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 12px;
+  color: var(--muted);
+  font-weight: 800;
+  border: 1px solid transparent;
+  transition: 160ms ease;
+}
+
+.navItem:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Active state matches your teal theme */
+.navItem.active {
+  background: rgba(46, 196, 182, 0.12);
+  border-color: rgba(46, 196, 182, 0.35);
+  color: var(--text);
+}
+
+/* Small dot indicator on active link */
+.navItem.active::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--primaryDark);
+  margin-right: 10px;
+}
+
+/* Push footer down */
+.sidebarSpacer {
+  flex: 1;
+}
+
+/* Footer */
+.sidebarFooter {
+  padding: 10px;
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+}
+
+/* Logout button */
+.logoutBtn {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 900;
+  cursor: pointer;
+  transition: 160ms ease;
+}
+
+.logoutBtn:hover {
+  background: var(--bg);
+  border-color: rgba(46, 196, 182, 0.35);
+}
+
+/* Mobile responsive: sidebar becomes top bar */
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .sidebarBrand {
+    padding: 0;
+  }
+
+  .sidebarNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .navItem {
+    height: 38px;
+    padding: 0 10px;
+  }
+
+  .sidebarSpacer {
+    display: none;
+  }
+
+  .sidebarFooter {
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .logoutBtn {
+    width: auto;
+    padding: 0 12px;
+  }
+}

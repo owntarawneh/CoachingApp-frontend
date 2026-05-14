@@ -1,0 +1,44 @@
+.bodyCard {
+  display: grid;
+  gap: 12px;
+}
+
+.bodyTop {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.bodyCol {
+  display: grid;
+  gap: 12px;
+}
+
+.bodySilhouette {
+  height: 330px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.bodyFoot {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .bodyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bodySilhouette {
+    height: 180px;
+  }
+}

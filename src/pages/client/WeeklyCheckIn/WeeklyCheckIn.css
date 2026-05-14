@@ -1,0 +1,106 @@
+.weeklyLayout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 18px;
+  margin-top: 14px;
+  align-items: start;
+}
+
+.weeklyLeft,
+.weeklyRight {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.weeklySectionTitle {
+  font-weight: 900;
+  font-size: 13px;
+  color: var(--text);
+  margin-top: 4px;
+}
+
+.weightRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.weightToggle {
+  padding-bottom: 6px;
+}
+
+.photosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.compliancePrompt {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.weeklyTextArea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 12px;
+  resize: vertical;
+  outline: none;
+  min-height: 140px;
+}
+
+.weeklyTextArea:focus {
+  border-color: rgba(46, 196, 182, 0.55);
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.18);
+}
+
+.submitRow {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.weeklySubmitBtn {
+  min-width: 220px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.weeklySubmitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.weeklySubmitBtn:hover {
+  filter: brightness(0.98);
+}
+
+@media (max-width: 1100px) {
+  .weeklyLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .photosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .weightRow {
+    grid-template-columns: 1fr;
+  }
+
+  .weightToggle {
+    padding-bottom: 0;
+  }
+}

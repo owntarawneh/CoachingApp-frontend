@@ -1,0 +1,50 @@
+/* Page-level spacing */
+.trainingTopBar {
+  margin-bottom: 12px;
+}
+
+/* Plan meta card */
+.trainingPlanMeta {
+  position: relative;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* top accent line like dashboard stat cards */
+.trainingPlanMeta::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--primary);
+  opacity: 0.9;
+}
+
+.trainingPlanName {
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.trainingPlanSub {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Empty card */
+.trainingEmpty {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--muted);
+}

@@ -1,0 +1,31 @@
+.pageHeader {
+  margin-bottom: 18px;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.pageSubtitle {
+  margin: 6px 0 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.pageDivider {
+  margin-top: 14px;
+  border: none;
+  border-top: 1px solid var(--border);
+}

@@ -1,0 +1,46 @@
+.historyFilters {
+  display: grid;
+  gap: 12px;
+}
+
+.historyFiltersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.historyFiltersActions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.resetBtn {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 900;
+  color: var(--text);
+  transition: 160ms ease;
+}
+
+.resetBtn:hover {
+  background: rgba(46, 196, 182, 0.08);
+  border-color: rgba(46, 196, 182, 0.35);
+}
+
+@media (max-width: 980px) {
+  .historyFiltersGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .historyFiltersActions {
+    justify-content: stretch;
+  }
+
+  .resetBtn {
+    width: 100%;
+  }
+}

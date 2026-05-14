@@ -1,0 +1,14 @@
+.coachShell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.coachMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.coachContent {
+  padding: 22px 24px;
+}

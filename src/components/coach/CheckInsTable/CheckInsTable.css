@@ -1,0 +1,139 @@
+.checkInsTableWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Header */
+.checkInsHeader {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 900;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 196, 182, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.checkInsHeaderCount {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+/* Table */
+.checkInsTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.checkInsTable th,
+.checkInsTable td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Header row */
+.checkInsTable thead th {
+  text-align: left;
+  font-weight: 900;
+  color: var(--muted);
+  background: var(--bg);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Rows */
+.checkInsTable tbody tr {
+  background: var(--surface);
+  transition: 160ms ease;
+}
+
+.checkInsTable tbody tr:hover {
+  background: rgba(46, 196, 182, 0.045);
+}
+
+/* Align last column right */
+.checkInsTable td:last-child,
+.checkInsTable th:last-child {
+  text-align: right;
+}
+
+/* Badge base */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--text);
+  background: var(--surface);
+}
+
+/* Pending badge */
+.badgePending {
+  border-color: rgba(46, 196, 182, 0.35);
+  background: rgba(46, 196, 182, 0.12);
+  color: var(--text);
+}
+
+.badgePending::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--primaryDark);
+}
+
+/* Reviewed badge */
+.badgeReviewed {
+  border-color: rgba(34, 197, 94, 0.25);
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--text);
+}
+
+.badgeReviewed::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 1);
+}
+
+/* Review button */
+.reviewBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(46, 196, 182, 0.35);
+  background: rgba(46, 196, 182, 0.12);
+  color: var(--text);
+
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 160ms ease;
+}
+
+.reviewBtn:hover {
+  background: rgba(46, 196, 182, 0.18);
+  border-color: rgba(46, 196, 182, 0.55);
+  transform: translateY(-1px);
+}
+
+.reviewBtn:active {
+  transform: translateY(0);
+}
